@@ -1,0 +1,22 @@
+# Base image with Node
+FROM node:20-slim
+
+# Install global Ionic CLI (optional)
+RUN npm install -g @ionic/cli
+
+# Set workdir
+WORKDIR /app
+
+# Copy everything
+COPY . /app
+
+
+# Go to App subdir and install
+WORKDIR /app/OSCAL-CAT-App
+RUN npm ci && npm run build
+
+# Expose default Ionic port
+EXPOSE 8100
+
+# Start dev server
+CMD ["npm", "run", "start", "--", "--host=0.0.0.0"]
