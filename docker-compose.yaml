@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  oscal-cat:
+    build: .
+    ports:
+      - "8100:8100"
+    volumes:
+      - .:/app
+    working_dir: /app/OSCAL-CAT-App
+    command: npm run start -- --host=0.0.0.0
