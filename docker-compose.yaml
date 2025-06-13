@@ -3,7 +3,7 @@ services:
   oscal-cat:
     build: .
     ports:
-      - "8100:8100"
+      - "4200:4200"
     volumes:
       - .:/app
     working_dir: /app/OSCAL-CAT-App

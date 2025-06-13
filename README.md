@@ -1,6 +1,12 @@
 # OSCAL Content/Catalog Authoring Tool (OSCAL CAT)
 
-## The code in this repository (and the related website, if it exists) is no longer under active development. At this time, the NIST OSCAL Team does not maintain the code or update dependencies. We do not review issues for feature requests or bug fixes. The repository is archived: it can be reactivated, but can be deleted at any time.
+## The code in this repository is a community developed version of the currenly archived [NIST OSCAL CAT](https://github.com/usnistgov/oscal-cat). It is under development and is provided as-is. Please feel free to help complete the following:
+
+- Update packages to latest supported versions
+- Support easier deployment via docker
+- Reduce build size by removing NIST rev 4
+- Update OSCAL version from v1.0.4 to latest(1.1.3) 
+- Future/stretch: Create electron .exe package as an alternative to docker deployment.
 
 ## If you are interested in reactivation of this repository, feature requests, or bug fixes - please, let us know and we may consider reactivating this repository again prioritizing it with consideration to the available resources.
 

@@ -1,4 +1,4 @@
-module github.com/usnistgov/oscal-cat
+module github.com/leblueelephante/docker-oscal-cat
 
 go 1.18
 
