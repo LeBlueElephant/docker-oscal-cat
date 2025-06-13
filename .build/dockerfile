@@ -15,8 +15,8 @@ COPY . /app
 WORKDIR /app/OSCAL-CAT-App
 RUN npm ci && npm run build
 
-# Expose default Ionic port
-EXPOSE 8100
+# Expose Ionic port
+EXPOSE 4200
 
 # Start dev server
 CMD ["npm", "run", "start", "--", "--host=0.0.0.0"]
